@@ -1,0 +1,47 @@
+.logoru img{ /*Mantém a proporção e qualidade da imagem de logo*/
+  width: auto;
+  height: auto;
+}
+
+header {
+  padding: 2.5rem 3%;
+}
+
+/*Distribuindo os elemento do meu header*/
+header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: var(--text-color-primary);
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*Tira as bolinhas dos itens da lista*/
+header nav ul {
+  list-style-type: none;
+
+  & li {
+    display: inline-block;
+    padding: 0 2.8rem;
+  }
+}
+
+
+/*estiliza os elementos que estiverem em foco, com o mouse em cima deles*/
+header li a:hover {
+  transform: scale(1.07);
+  background: linear-gradient(
+    90deg,
+    var(--second-brand-color) 0%,
+    var(--brand-color) 100%
+  );
+  /*Faz com que ao colocar o mouse em cima dos itens, apenas as letras mudem de cor*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+

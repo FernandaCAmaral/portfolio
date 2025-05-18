@@ -1,0 +1,50 @@
+/*estilizando a parte de formação e idiomas*/
+
+section#formacao {
+  padding: 2.5rem 5%;
+}
+
+#formacao .flex {
+  gap: 3.7rem;
+}
+
+/*estiliza as 'caixinhas' que contém os icones e informaçoes*/
+#formacao .box {
+  padding: 2.5rem;
+  border-radius: 25px;
+  border: 1.2px solid var(--second-brand-color);
+  margin-top: 2.75rem;
+  transition: .3s;
+}
+
+/*Coloca efeito de destaque ao mover o mouse por cima das caixas*/
+#formacao .box:hover {
+  box-shadow: 0 0 1.5rem #542c5d;
+  transform: scale(1.07);
+  border-color: var(--second-brand-color);
+  background: linear-gradient(
+    90deg,
+    var(--second-brand-color) 0%,
+    var(--brand-color) 100%
+  );
+  /*Faz com que ao colocar o mouse em cima dos itens, apenas as letras mudem de cor*/
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/*ajusta o tamanho do ícone do meio, para ficar parecido com os outros*/
+#formacao .box:nth-child(2) img {
+  width: 3.4rem;
+}
+
+/*estilizando os textos*/
+#formacao .box h3 {
+  font: var(--fw-md) 1.4rem/1.3rem var(--ff-sans);
+  margin: 0.9rem 0;
+}
+
+#formacao .box p {
+  font: var(--fw-sm) var(--fs-base)/1rem var(--ff-sans);
+  color: var(--text-color-secondary);
+}

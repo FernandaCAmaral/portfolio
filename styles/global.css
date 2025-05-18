@@ -1,0 +1,64 @@
+/*Esse arquivo serve, para um desenvolvimento mais prático e de fácil manutenção, definir as principais variáveis que estarei utilizando no projeto*/
+
+/*Garante que a largura e a altura dos elementos incluam o padding e a border. Isso facilita o controle do layout*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*"Reseta" o estilo padrão em todos os elementos da página, garante um ponto de partida mais consistente*/
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/*Define as princípais variáveis que estarei utilizando*/
+:root {
+  --bg-color: #09090b;
+  --bg-color-secundary: #18181b;
+  --text-color-primary: #f4f4f5;
+  --text-color-secondary: #a1a1aa;
+
+  --brand-color: #894ca2;
+  --second-brand-color: #542c5d;
+
+  --ff-sans: 'Inter', system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.75rem;
+}
+
+/*ao clicar em um href no header, faz com que o scroll aconteça de forma mais lenta*/
+html {
+  scroll-behavior: smooth;
+  --scroll-duration: 3s;
+}
+
+body {
+  font-family: var(--ff-sans);
+  background-color: var(--bg-color);
+  color: var(--text-color-primary);
+  height: 100vh;
+}
+
+/*Aqui defino as classes utilitárias que irei utilizar para já ir estilizando o HTML enquanto o escrevo*/
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.titulo {
+  color: var(--brand-color);
+  font: var(--fw-bold) var(--fs-lg)/3.2rem var(--ff-sans);
+  text-shadow: 0 0 1.5rem #542c5d;
+  text-align: center;
+}

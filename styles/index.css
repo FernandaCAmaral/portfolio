@@ -1,0 +1,11 @@
+/*Serve para melhor organização dos recursos de css, faz um "link" entre o html e seus diferentes css*/
+
+@import url(global.css);
+@import url(header.css);
+@import url(sobre.css);
+@import url(formacao.css);
+@import url(projetos.css);
+@import url(contato.css);
+@import url(footer.css);
+
+

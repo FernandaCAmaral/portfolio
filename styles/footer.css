@@ -1,0 +1,14 @@
+/*Estiliza o footer da página, centralizando os elementos*/
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  & span {
+    color: var(--text-color-secondary);
+    font-size: var(--fs-sm);
+  }
+}

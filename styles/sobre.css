@@ -1,0 +1,70 @@
+section#sobre {
+  padding: 3rem 5%;
+
+  & .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+  }
+}
+
+section#sobre .img-eu img {
+  width: 22rem;
+  height: 22rem;
+  object-fit: cover;
+  border-radius: 50%;
+  
+  box-shadow: 0 0 1.5rem #542c5d;
+}
+
+#sobre .texto-sobre h2 {
+  color: var(--text-color-primary);
+  font: var(--fw-bold) var(--fs-lg)/3.2rem var(--ff-sans);
+  line-height: 2rem;
+  margin-bottom: 2.5rem;
+
+  & span {
+    display: block;
+    color: var(--brand-color);
+    text-shadow: 0 0 1.5rem #542c5d;
+  }
+}
+
+#sobre .texto-sobre p {
+  margin: 1rem 0;
+  text-align: justify;
+  font: var(--fw-sm) var(--fs-base)/1rem var(--ff-sans);
+  color: var(--text-color-secondary);
+  & span {
+    color: var(--brand-color);
+    font-weight: var(--fw-bold);
+    text-shadow: 0 0 1rem #542c5d;
+  }
+}
+
+#sobre .btn-social button {
+  display: inline-flex;
+  padding: 0.5rem;
+  margin: 1.5rem  0.7rem 0 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--brand-color);
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+
+  & img { /*Faz com que as imagens não transbordem a margem do button*/
+    max-width: 90%;
+    max-height: 90%;
+    width: auto; /*mantém a proporção da imagem*/
+    height: auto;
+  }
+}
+
+#sobre .btn-social button:hover {
+  box-shadow: 0 0 1rem #542c5d;
+  transform: scale(1.05);
+}

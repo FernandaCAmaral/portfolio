@@ -1,0 +1,69 @@
+/*Estiliza a parte do formulário de contato*/
+#contato {
+  padding: 5rem 5%;
+}
+
+#contato form {
+  max-width: 31.25rem;
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem
+}
+
+/*Estiliza as labels dos inputs*/
+label {
+  font: var(--fw-sm) var(--fs-sm)/0.7rem var(--ff-sans);
+  color: var(--text-color-secondary);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/*define formato, cor, fonte... dos inputs e textarea do contato*/
+form input, textarea {
+  width: 100%;
+  padding: 1.25rem 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  font: var(--fw-sm) var(--fs-base)/1rem var(--ff-sans);
+  background-color: var(--bg-color-secundary);
+  outline: 0;
+  color: var(--text-color-primary);
+}
+
+/*Ao selecionar um input ou textarea, aplica um efeito de foco naquele elemento, o destacando*/
+input:focus,
+textarea:focus {
+  border-color: transparent;
+  box-shadow: 0 0 1.5rem #542c5d;
+  border: 0.1rem solid var(--brand-color);
+  outline-offset: 0.1px;
+}
+
+/*retira a possibilidade do usuário mexer no tamanho da textarea*/
+form textarea{
+  resize: none;
+}
+
+/*estilizando o botão de enviar do form*/
+form .btn-enviar {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+form .btn-enviar input {
+  width: 7.5rem;
+  background-color: var(--brand-color);
+  color: var(--text-color-primary);
+  font: var(--fw-bold) var(--fs-base)/1rem var(--ff-sans);
+  cursor: pointer;
+  transition: .3s;
+}
+
+form .btn-enviar input:hover {
+  background-color: var(--second-brand-color);
+  box-shadow: 0 0 1rem #542c5d;
+  transform: scale(1.05);
+}
+
