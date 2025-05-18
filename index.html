@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="/styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header> <!--Header que define o 'menu' do meu site, com ink clicáveis que redirecionam-->
+        <div class="container">
+
+          <div class="logoru"> <!--div que contém a logo do meu site-->
+            <a href="#">
+              <img src="assets/logo.png" alt="logo fernanda e RU">
+            </a>
+          </div>
+
+          <nav class="menu"> <!--menu com possibilidade de intereção-->
+            <ul>
+              <li><a href="#sobre">Sobre Mim</a></li>
+              <li><a href="#formacao">Formação e Idiomas</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+
+        </div>
+    </header> 
+
+
+    <main>
+        <section id="sobre"> <!--section para a parte 'sobre mim'-->
+          <div class="container">
+            <div class="flex">
+
+              <div class="texto-sobre">
+                <h2>BEM VINDO(A), <span>SOU FERNANDA AMARAL!</span></h2>
+                <p>Apaixonada por tecnologia e sempre em busca de soluções inovadoras para problemas. Gosto de explorar novas abordagens e ferramentas que tornem processos mais eficientes e inteligentes.</p>
+                <p>Acredito que a <span>criatividade</span>, aliada à lógica da programação, pode transformar <span>ideias</span> em <span>resultados</span> concretos.</p>
+
+                <div class="btn-social"> <!--botões clicáveis que redirecionam as minhas redes sociais-->
+                  <a href="https://github.com/FernandaCAmaral" target="_blank"><button><img src="assets/github.png" alt=""></button></a>
+                  <a href="https://www.instagram.com/fnandaamaral/" target="_blank"><button><img src="assets/instagram.png" alt=""></button></a>
+                </div>
+              </div> 
+              
+              <div class="img-eu"> <!--arte pixelada de Fernanda Amaral-->
+                <img src="assets/logocv.png" alt="Foto pixelart de Fernanda Amaral">
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <section id="formacao">
+          <div class="container">
+            <h2 class="titulo">FORMAÇÃO EDUCACIONAL E IDIOMAS</h2>
+
+            <div class="flex"> <!--div que mantém o display flex de seus elementos internos-->
+
+              <div class="box"> <!--div que separa as diferente categorias dessa sessão: FORMAÇÃO-->
+                <img src="assets/capelo.png" alt="Imagem de um chapéu de formatura">
+                <h3>Formação</h3>
+                <p>Atualmente curso Ciência da Computação na UNINTER, desenvolvendo uma base sólida em lógica, estrutura de dados, algoritmos e desenvolvimento de software.</p>
+              </div>
+
+              <div class="box"><!--CURSOS-->
+                <img src="assets/livro.png" alt="Imagem de um chapéu de formatura">
+                <h3>Cursos</h3>
+                <p>Participei de formações práticas em desenvolvimento web pela Rocketseat, com foco em tecnologias modernas como HTML, CSS e JavaScript</p>
+              </div>
+
+              <div class="box"><!--IDIOMMAS-->
+                <img src="assets/idioma.png" alt="Imagem de um chapéu de formatura">
+                <h3>Idiomas</h3>
+                <p>Nível avançado em inglês, com foco em fluência oral por meio de aulas particulares de conversação, voltadas para o uso profissional e técnico da língua.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="projetos"> 
+          <div class="container">
+            <h2 class="titulo">MEUS PROJETOS</h2>
+
+            <div class="projetos-grid">  <!--div que mantém o display GRID de seus elementos internos-->
+
+              <div class="projeto">  <!--Projeto ZINGEN-->
+                <div class="overlay">
+                  Zingen Project
+                </div>
+              </div>
+
+              <div class="projeto"> <!--Projeto PORTAL DE NOTICIAS-->
+                <div class="overlay">
+                  Portal de Notícias
+                </div>
+              </div>
+
+              <div class="projeto"> <!--Projeto TRAVELGRAM-->
+                <div class="overlay">
+                  Travelgram
+                </div>
+              </div>
+
+              <div class="projeto"> <!--Projeto CONVERSOR-->
+                <div class="overlay">
+                  (REFINANDO) <br>
+                  Conversor
+                </div>
+              </div>
+
+              <div class="projeto"> <!--Projeto FORMULÁRIO DE MATRICULA-->
+                <div class="overlay">
+                  (REFINANDO) <br>
+                  Formulário de Matrícula
+                </div>
+              </div>
+
+            </div>
+          </div>           
+        </section>
+
+        <section id="contato">
+            <h2 class="titulo">ENTRE EM CONTATO</h2>
+            <div class="container">
+
+              <form action="#"> <!--Inicio do formulário para contato-->
+                <div class="input-wrapper"> <!--div para ajudar na separação dos diferentes inputs: INPUT NOME-->
+                  <label for="nome">Nome completo:</label> 
+                  <input type="text" name="Nome" id="nome" placeholder="Fulano da Silva" required>
+                </div>
+
+                <div class="input-wrapper"> <!--INPUT EMAIL-->
+                  <label for="email">E-mail:</label>
+                  <input type="text" name="E-mail" id="email" placeholder="Fulano@silva.com" required>
+                </div>
+
+                <div class="input-wrapper"><!--CELULAR-->
+                  <label for="numero">Número:</label>
+                  <input type="text" name="Número" id="numero" placeholder="(10)98765-4321">
+                </div>
+
+                <!--ÁREA PARA MENSAGEM DE TEXTO-->
+                <textarea name="" id="mensagem" placeholder="Escreva sua mensagem aqui." rows="4" required></textarea>
+
+                <div class="btn-enviar"> <!--Botão enviar do formulário-->
+                  <input type="submit" value="Enviar" id="btnEnviar">
+                </div>
+
+              </form> <!--Fim do formulário para contato-->
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>&copy; 2025 Fernanda Amaral [4730660]</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
